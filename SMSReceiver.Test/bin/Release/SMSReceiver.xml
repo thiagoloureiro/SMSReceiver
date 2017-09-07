@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SMSReceiver</name>
+    </assembly>
+    <members>
+        <member name="M:SMSReceiver.PhoneNumber.#ctor(System.String)">
+            <summary>
+            Specify the full URL, eg: https://smsreceivefree.com/country/canada
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="M:SMSReceiver.WebClientReader.GetList(System.String)">
+            <summary>
+            Return Phone List
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
