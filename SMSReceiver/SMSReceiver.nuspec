@@ -2,14 +2,14 @@
 <package >
   <metadata>
     <id>WebImpact.WIFramework.SMSReceiver</id>
-    <version>1.0</version>
+    <version>1.2</version>
     <title>SMSReceiver</title>
     <authors>Thiago Loureiro</authors>
     <owners>Thiago Loureiro</owners>
     <projectUrl>https://github.com/thiagoloureiro/SMSReceiver</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Retrieve SMS Messages from smsreceivefree.com</description>
-    <releaseNotes>First Release</releaseNotes>
+    <releaseNotes>Added XML Comments to the Methods</releaseNotes>
     <copyright>Copyright 2017©</copyright>
     <tags>SMSReceiver</tags>
   </metadata>
