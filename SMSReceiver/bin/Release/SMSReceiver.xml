@@ -10,6 +10,21 @@
             </summary>
             <param name="url"></param>
         </member>
+        <!-- Badly formed XML comment ignored for member "M:SMSReceiver.PhoneNumber.GetPhoneList" -->
+        <member name="M:SMSReceiver.RetrieveData.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Class Constructor
+            </summary>
+            <param name="phonenumber">PhoneNumber used to receive the Message</param>
+            <param name="prefix">Prefix used: eg: Your amico account code is: </param>
+            <param name="clearprefix">Clear the prefix and returns only the code</param>
+        </member>
+        <member name="M:SMSReceiver.RetrieveData.ReturnData">
+            <summary>
+            Returns the string from PhoneNumber/Prefix provided
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:SMSReceiver.WebClientReader.GetList(System.String)">
             <summary>
             Return Phone List

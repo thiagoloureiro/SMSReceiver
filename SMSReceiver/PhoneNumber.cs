@@ -15,6 +15,10 @@ namespace SMSReceiver
             _url = url;
         }
 
+        /// <summary>
+        /// Returns a List<string> of PhoneNumbers in specified Url
+        /// </summary>
+        /// <returns></returns>
         public List<string> GetPhoneList()
         {
             var result = WebClientReader.GetList(_url);

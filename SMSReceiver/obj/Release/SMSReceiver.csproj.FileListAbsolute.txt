@@ -4,3 +4,10 @@ c:\users\owner\source\repos\SMSReceiver\SMSReceiver\bin\Release\SMSReceiver.pdb
 c:\users\owner\source\repos\SMSReceiver\SMSReceiver\obj\Release\SMSReceiver.csproj.CoreCompileInputs.cache
 c:\users\owner\source\repos\SMSReceiver\SMSReceiver\obj\Release\SMSReceiver.dll
 c:\users\owner\source\repos\SMSReceiver\SMSReceiver\obj\Release\SMSReceiver.pdb
+C:\Projects\SMSReceiver\SMSReceiver\bin\Release\SMSReceiver.xml
+C:\Projects\SMSReceiver\SMSReceiver\bin\Release\SMSReceiver.dll
+C:\Projects\SMSReceiver\SMSReceiver\bin\Release\SMSReceiver.pdb
+C:\Projects\SMSReceiver\SMSReceiver\obj\Release\SMSReceiver.csprojResolveAssemblyReference.cache
+C:\Projects\SMSReceiver\SMSReceiver\obj\Release\SMSReceiver.csproj.CoreCompileInputs.cache
+C:\Projects\SMSReceiver\SMSReceiver\obj\Release\SMSReceiver.dll
+C:\Projects\SMSReceiver\SMSReceiver\obj\Release\SMSReceiver.pdb
