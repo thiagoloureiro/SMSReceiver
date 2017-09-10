@@ -1,10 +1,12 @@
-﻿namespace SMSReceiver
+﻿using System.Collections.Generic;
+
+namespace SMSReceiver
 {
     public class RetrieveData
     {
-        private string _phonenumber;
-        private string _prefix;
-        private bool _clearprefix;
+        private readonly string _phonenumber;
+        private readonly string _prefix;
+        private readonly bool _clearprefix;
 
         /// <summary>
         /// Class Constructor
@@ -23,7 +25,17 @@
         /// Returns the string from PhoneNumber/Prefix provided
         /// </summary>
         /// <returns></returns>
-        public string ReturnData()
+        public string ReturnString()
+        {
+            var result = WebClientReader.GetStringData(_phonenumber, _prefix, _clearprefix);
+            return result.Count > 0 ? result[0] : null;
+        }
+
+        /// <summary>
+        /// Returns the <list type="string"/> from PhoneNumber/Prefix provided
+        /// </summary>
+        /// <returns></returns>
+        public List<string> ReturnStringList()
         {
             var result = WebClientReader.GetStringData(_phonenumber, _prefix, _clearprefix);
             return result;

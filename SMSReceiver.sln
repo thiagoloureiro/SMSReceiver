@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.3
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSReceiver", "SMSReceiver\SMSReceiver.csproj", "{032E2247-5381-4A68-9B89-B9A9D50C1566}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSReceiver.Test", "SMSReceiver.Test\SMSReceiver.Test.csproj", "{3F3CC37E-3480-4A3A-8ED6-53EECDB62227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSReceiver.Sample", "SMSReceiver.Sample\SMSReceiver.Sample.csproj", "{7AA16850-0E1D-4535-ADB1-6EE988FB26FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3F3CC37E-3480-4A3A-8ED6-53EECDB62227}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F3CC37E-3480-4A3A-8ED6-53EECDB62227}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F3CC37E-3480-4A3A-8ED6-53EECDB62227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA16850-0E1D-4535-ADB1-6EE988FB26FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA16850-0E1D-4535-ADB1-6EE988FB26FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA16850-0E1D-4535-ADB1-6EE988FB26FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA16850-0E1D-4535-ADB1-6EE988FB26FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

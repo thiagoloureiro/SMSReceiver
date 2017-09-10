@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 
@@ -13,7 +14,7 @@ namespace SMSReceiver
         /// <returns></returns>
         public static List<string> GetList(string url)
         {
-            var str = @"button-small numbutton";
+            const string str = @"button-small numbutton";
 
             string result;
             using (var client2 = new WebClient())
@@ -24,7 +25,7 @@ namespace SMSReceiver
             var lstPhone = new List<string>();
             using (var reader = new StringReader(result))
             {
-                string line = string.Empty;
+                string line;
                 do
                 {
                     line = reader.ReadLine();
@@ -32,7 +33,7 @@ namespace SMSReceiver
                     {
                         if (line.Contains(str))
                         {
-                            lstPhone.Add(line.Substring(line.LastIndexOf(str), 36).Replace(str, "").Replace("\">", "").Replace(" ", ""));
+                            lstPhone.Add(line.Substring(line.LastIndexOf(str, StringComparison.Ordinal), 36).Replace(str, "").Replace("\">", "").Replace(" ", ""));
                         }
                     }
                 } while (line != null);
@@ -40,9 +41,11 @@ namespace SMSReceiver
             return lstPhone;
         }
 
-        public static string GetStringData(string phonenumber, string prefix, bool clearprefix)
+        public static List<string> GetStringData(string phonenumber, string prefix, bool clearprefix)
         {
             string result;
+            var lstResult = new List<string>();
+
             phonenumber = phonenumber.Replace("+", "");
             using (var client = new WebClient())
             {
@@ -51,7 +54,7 @@ namespace SMSReceiver
 
             using (var reader = new StringReader(result))
             {
-                string line = string.Empty;
+                string line;
                 do
                 {
                     line = reader.ReadLine();
@@ -60,13 +63,12 @@ namespace SMSReceiver
                         if (line.Contains(prefix))
                         {
                             result = clearprefix ? (line.Replace(prefix, "")) : line;
-
-                            break;
+                            lstResult.Add(result);
                         }
                     }
                 } while (line != null);
             }
-            return result;
+            return lstResult;
         }
     }
 }
