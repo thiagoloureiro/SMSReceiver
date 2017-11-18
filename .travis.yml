@@ -1,2 +1,6 @@
-language csharp
-solution SMSReceiver
+language: csharp
+solution: "SMSReceiver.sln"
+install:
+- travis_retry nuget restore -source "https://www.nuget.org/api/v2" SMSReceiver.sln
+script:
+- xbuild SMSReceiver.sln
