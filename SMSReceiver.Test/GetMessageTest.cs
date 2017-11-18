@@ -8,8 +8,8 @@ namespace SMSReceiver.Test
         public void GetMessage_Success()
         {
             // Arrange
-            string phonenumber = "19028005845";
-            string prefix = "Your amico account code is: ";
+            string phonenumber = "13433030421";
+            string prefix = "code";
             bool clearprefix = true;
 
             // Act
