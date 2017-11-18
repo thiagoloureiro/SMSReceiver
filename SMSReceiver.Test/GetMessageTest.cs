@@ -14,7 +14,7 @@ namespace SMSReceiver.Test
 
             // Act
             var objMessage = new RetrieveData(phonenumber, prefix, clearprefix);
-            var ret = objMessage.ReturnData();
+            var ret = objMessage.ReturnString();
 
             // Assert
             Assert.True(ret.Length > 0);
